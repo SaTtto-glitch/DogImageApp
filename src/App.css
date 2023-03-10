@@ -1,38 +1,102 @@
-.App {
+.container {
+  background: khaki;
+}
+
+Header {
+  grid-column: 1 / 6;
+  background: #f5f5f5;
   text-align: center;
+  font-size: 38px;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  display: grid;
+  background: skyblue;
+  grid-template-columns: 2fr 0fr;
+  border-bottom: 5px solid #dfdcdc;
+  margin: 20px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Descript {
+  background: pink;
+  font-size: 18px;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.img-area img {
+  width: 400px;
+  height: 260px;
+  object-fit: cover;
+}
+
+.app-main button {
+  align-self: right;
+  color: #f5f5f5;
+  background-color: rgb(0, 119, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 20px 0px;
+  float: right;
+}
+
+.BreedsSelectdisc {
+  background-color: #98b8a2;
+  padding: 5px;
+  margin: 10px 50px;
+}
+
+.seachform {
+  background-color: #f6f884;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-justify-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+select {
+  padding: 10px;
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.breedslist {
+  font-family: Century;
+  background: pink;
+  font-size: 18px;
+  margin: auto;
+}
+
+.seachform button {
+  color: #f5f5f5;
+  background-color: rgb(0, 119, 255);
+  border: none;
+  border-radius: 5px;
+  margin: auto;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#wrapper {
+  height: 100%;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+}
+
+.section li {
+  float: none;
+  width: calc(100% / 1); /*リスト幅をビューポートの1/3で設定*/
+  line-height: 0; /*行間をなくす⇒上下を詰める*/
+}
+
+section img {
+  display: block; /*imgタグの初期値はinline⇒blockで幅指定を出来るように*/
+  width: 100%; /*親要素liの幅：calc(100%/3)に合わせる*/
+  height: auto;
 }
