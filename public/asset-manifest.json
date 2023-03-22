@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/DogImageApp/public/static/css/main.5f5c22a0.css",
+    "main.js": "/DogImageApp/public/static/js/main.def43021.js",
+    "index.html": "/DogImageApp/public/index.html",
+    "main.5f5c22a0.css.map": "/DogImageApp/public/static/css/main.5f5c22a0.css.map",
+    "main.def43021.js.map": "/DogImageApp/public/static/js/main.def43021.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f5c22a0.css",
+    "static/js/main.def43021.js"
+  ]
+}
